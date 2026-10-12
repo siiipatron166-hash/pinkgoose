@@ -1,4 +1,4 @@
-/* text fonts en size nog niet gedaan en tekentjes en flex wrap bij alles en ordenen op volgorde van dehtml*/
+
 
 
 * {
@@ -9,6 +9,8 @@
 
 body{
     font-family: 'montserrat', medium;
+    background-color: #0A1117;
+    color: white;
 }
 
 /* containers */
@@ -94,7 +96,6 @@ body{
 }
 
 .title-box1 {
-    font-family: bold;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -114,29 +115,21 @@ header {
     background-color: transparent;
     width: 100%;
     z-index: 1000;  */
-    
-    
 }
 
-body {
-    background-color: #0A1117;
-    color: white;
-    
-}
 
+/* logo */
 .logo {
     font-weight: bold;
     font-size: 34px;
     font-optical-sizing: auto;
-    
-    
-
-
 }
 
 .goose {
     color: #ffb4d3;
 }
+
+/* header nav */
 
 nav {
     display: flex;
@@ -144,9 +137,29 @@ nav {
     gap: 12px;
     color: white;
     text-decoration-line: none;
-    
-
+    font-size: 20px;
+    font-weight: 500;
 }
+
+nav a:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+/* frame onder img */
+.frame{
+    display: flex;
+    justify-content: center;
+    width: 404px;
+    height: 44px;
+    border-radius: 100px;
+    background-color: #FFB4D3;
+    color: #0A1117;
+    align-items: center;
+    margin-top: -22px;
+}
+
+/* button */
 
 .login-btn {
     gap: 12px;
@@ -163,6 +176,11 @@ nav {
     padding-bottom: 11px;
     padding-top: 11px;
     margin: 20px;
+}
+
+.login-btn:hover{
+    background-color: #384d63;
+
 }
 
 .start-btn {
@@ -364,7 +382,6 @@ color: white;
 .blok5 h2{   margin-top: 12px;}
 .blok6 h2{   margin-top: 12px;}
 
-/* .blok1 h3{align-self: flex-end;} */
 .blok7 h3{text-align: right;}
 .blok8 h3{text-align: right;}
 .blok9 h3{text-align: right;}
@@ -372,7 +389,6 @@ color: white;
 
 .title-box2{
     margin-bottom: 44px;
-    font-family: bold;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -381,7 +397,6 @@ color: white;
 
 .title-box3{
     margin-bottom: 44px;
-    font-family: bold;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -389,6 +404,8 @@ color: white;
     display: flex;
     justify-content: center;
 }
+
+/* pills */
 
 .pills{
     width: 888px;
@@ -424,17 +441,15 @@ color: white;
     padding-right: 26px;
 }
 
-.frame{
-    display: flex;
-    justify-content: center;
-    width: 404px;
-    height: 44px;
-    border-radius: 100px;
-    background-color: #FFB4D3;
-    color: #0A1117;
-    align-items: center;
-    margin-top: -22px;
-}
+.pill1{ color: #FFB4D3;}
+.pill2{ color: #FFC24C;}
+.pill3{ color: #D387F7;}
+.pill4{ color: #77E6FF;}
+.pill5{ color: #23C9DE;}
+.pill6{ color: #FF9E9E;}
+.pill7{ color: #505F6D}
+
+
 
 .text-column{
     display: flex;
@@ -444,6 +459,7 @@ color: white;
     font-size: 54px;
     color: #37424D;
     align-items: center;
+    font-family: "Lato", sans-serif;;
     
 }
 
@@ -452,6 +468,7 @@ color: white;
 
 }
 
+/* partners */
 
 .partner-blocks {
     display: flex;
@@ -485,6 +502,8 @@ color: white;
     gap: 20px   ;
 }
 
+/* helpers */
+
 .help{
     border-radius: 40px;
     display: flex;
@@ -499,8 +518,11 @@ color: white;
 
 .skills{
     margin-bottom: 102px;
+    font-size: 30px;
+    text-align: center;
 }
 
+/* email */
 .email{
     display: flex;
     justify-content: center;
@@ -524,6 +546,7 @@ input::placeholder{
     text-align: center;
 }
 
+/* subscribe */
 .subscribe{
     width: 175px;
     height: 68px;
@@ -542,7 +565,7 @@ input::placeholder{
 
 }
 
-
+/* contact */
 .contact-buttons{
     display: flex;
     flex-direction: row;
@@ -588,10 +611,6 @@ input::placeholder{
     font-size: 13px;
     opacity: 0.7;
 }
-
-
-
-
 
 
 
@@ -642,16 +661,13 @@ text-decoration-line: none;
     justify-content: flex-end;
 }
 
+.footer i{
+    background-color: #3f4c58;
+    padding: 12px;
+    border-radius: 20px;
+}
 
 
-
-.pill1{ color: #FFB4D3;}
-.pill2{ color: #FFC24C;}
-.pill3{ color: #D387F7;}
-.pill4{ color: #77E6FF;}
-.pill5{ color: #23C9DE;}
-.pill6{ color: #FF9E9E;}
-.pill7{ color: #505F6D}
 
 
 /* form */
@@ -734,11 +750,26 @@ form button:hover {
 
 
 /* sterren */
+
+.stars {
+    position: relative;
+}
+
 .stars::before{
     content: "";
-    background-image: url(/images/) ;
+    background-image: url(/images/stars/Group\ 5604.png);
     background-repeat: no-repeat;
     position: absolute;
     display: block;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
     
 }
+
+.star-blue{color: #4BE1F4;}
+.star-purple{color: #A36FFE;}
+.star-lime{color: #C8D316;}
+.star-orange{color: #FF8135;}
+.star-yellow{color: #FFFBA8;}
