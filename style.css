@@ -367,7 +367,7 @@ color: white;
 .blok1 p{  margin-top: 12px; margin-bottom: 165px;}
 .blok2 p{  margin-top: 12px; margin-bottom: 145px;}
 .blok3 p{  margin-top: 12px; margin-bottom: 143px;}
-.blok4 p{  margin-top: 12px; margin-bottom: 180px;}
+.blok4 p{  margin-top: 12px; margin-bottom: 178px;}
 .blok5 p{  margin-top: 12px; margin-bottom: 120px;}
 .blok6 p{  margin-top: 12px; margin-bottom: 175px;}
 .blok7 p{  margin-bottom: 10px;}
@@ -751,11 +751,11 @@ form button:hover {
 
 /* sterren */
 
-.stars {
-    position: relative;
-}
 
-.stars::before{
+/* optioneel */
+/* .stars {position: relative;} */
+
+/* .stars::before{
     content: "";
     background-image: url(/images/stars/Group\ 5604.png);
     background-repeat: no-repeat;
@@ -766,7 +766,7 @@ form button:hover {
     top: 0;
     right: 0;
     
-}
+} */
 
 .star-blue{color: #4BE1F4;}
 .star-purple{color: #A36FFE;}
