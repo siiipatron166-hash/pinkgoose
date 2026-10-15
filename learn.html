@@ -1,126 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Learn</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Learn – Pink Goose</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
-<!-- header -->
-<header class="container">
+<body>
+
+    <!-- Header -->
+    <header class="container">
         <span class="logo">Pink <span class="goose">Goose</span></span>
         <nav>
-            <a class="footer-text" href="index.html" title="To the homepage">Home</a>
-            <a class="footer-text" href="learn.html" title="Learn more">Learn</a>
-            <a class="footer-text" href="about.html" title="About us">About</a>
-            <a class="footer-text" href="contact.html" title="Contact us">Contact</a>
+            <a class="nav-link" href="index.html" title="To the homepage">Home</a>
+            <a class="nav-link" href="learn.html" title="Learn more">Learn</a>
+            <a class="nav-link" href="about.html" title="About us">About</a>
+            <a class="nav-link" href="contact.html" title="Contact us">Contact</a>
         </nav>
-        <a class="login-btn">login</a>
+        <a class="login-btn">Login</a>
     </header>
 
-<section class="container container-big">
-    <h2 class="title-box2">Ready for every project</h2>
-    <div class="pills">
-        <div class="pill pill1">Investment DAO</div>
-        <div class="pill pill2">Startup DAO</div>
-        <div class="pill pill3">Service DAO</div>
-        <div class="pill pill4">Community DAO</div>
-    </div>
-    <div class="pills2">
-        <div class="pill pill5">Impact DAO</div>
-        <div class="pill pill6">DeFi DAO</div>
-        <div class="pill pill7"><i class="fa-notdog-duo fa-solid fa-plus"></i>&ensp;more</div>
-    </div>
+    <main>
 
+        <!-- Pills & image -->
+        <section class="container container-big">
+            <h1 class="section-title">Ready for every project</h1>
+            <ul class="pills">
+                <li class="pill pill--pink">Investment DAO</li>
+                <li class="pill pill--yellow">Startup DAO</li>
+                <li class="pill pill--purple">Service DAO</li>
+                <li class="pill pill--blue">Community DAO</li>
+            </ul>
+            <ul class="pills pills--narrow">
+                <li class="pill pill--teal">Impact DAO</li>
+                <li class="pill pill--red">DeFi DAO</li>
+                <li class="pill pill--gray"><i class="fa-solid fa-plus"></i>&ensp;More</li>
+            </ul>
 
-    <img src="/images/picture.png">
+            <img src="images/picture.png" alt="Pink Goose platform banner">
 
-    <div class="frame">1000+ projects launched on Superdao</div>
+            <div class="frame">1000+ projects launched on Superdao</div>
+        </section>
 
-</section>
+        <!-- Journey -->
+        <section class="container container-big">
+            <h2 class="section-title">Designed for the full journey</h2>
+            <ul class="journey-list">
+                <li>Organisation design</li>
+                <li>Smart contract development</li>
+                <li>Fundraising</li>
+                <li>Launch marketing</li>
+                <li>Member onboarding</li>
+                <li>Contributor management</li>
+                <li>GOOSE operations</li>
+            </ul>
+        </section>
 
-<section class="container container-big">
-    <h2 class="title-box2">Designed for the full journey</h2>
-    <div class="text-column">
-        <div>Organisation design</div>
-        <div>Smart contract development</div>
-        <div>Fundraising</div>
-        <div>Launch marketing</div>
-        <div>Member onboarding</div>
-        <div>Contributor management</div>
-        <div>GOOSE operations</div>
-    </div>
-</section>
-
-
-<section class="container-wide">
-    <h2 class="title-box2">Works with</h2>
-    <div class="partner-blocks">
-        <div class="partner-block">
-            <div class="partner">
-                <img src="/images/partners/Icon_ethereum.png">
+        <!-- Partners -->
+        <section class="container-wide">
+            <h2 class="section-title">Works with</h2>
+            <div class="partner-blocks">
+                <div class="partner-block">
+                    <div class="partner">
+                        <img src="images/partners/Icon_ethereum.png" alt="Ethereum logo">
+                    </div>
+                    <span>Ethereum</span>
+                </div>
+                <div class="partner-block">
+                    <div class="partner">
+                        <img src="images/partners/Icon_polygon.png" alt="Polygon logo">
+                    </div>
+                    <span>Polygon</span>
+                </div>
+                <div class="partner-block">
+                    <div class="partner">
+                        <img src="images/partners/Frame-5608.png" alt="Gnosis Safe logo">
+                    </div>
+                    <span>Gnosis Safe</span>
+                </div>
+                <div class="partner-block">
+                    <div class="partner">
+                        <img src="images/partners/Frame-2091.png" alt="Snapshot logo">
+                    </div>
+                    <span>Snapshot</span>
+                </div>
+                <div class="partner-block">
+                    <div class="partner">
+                        <img src="images/partners/Avatar.png" alt="ENS logo">
+                    </div>
+                    <span>ENS</span>
+                </div>
+                <div class="partner-block">
+                    <div class="partner">
+                        <img src="images/partners/icon_opensea.png" alt="OpenSea logo">
+                    </div>
+                    <span>OpenSea</span>
+                </div>
             </div>
-            <span>Ethereum</span>
-        </div>
-        <div class="partner-block">
-            <div class="partner">
-                <img src="/images/partners/Icon_polygon.png">
-            </div>
-            <span>Polygon</span>
-        </div>
-        <div class="partner-block">
-            <div class="partner">
-                <img src="/images/partners/Frame-5608.png">
-            </div>
-            <span>Gnosis Safe</span>
-        </div>
-        <div class="partner-block">
-            <div class="partner">
-                <img src="/images/partners/Frame-2091.png">
-            </div>
-            <span>Snapshot</span>
-        </div>
-        <div class="partner-block">
-            <div class="partner">
-                <img src="/images/partners/Avatar.png">
-            </div>
-            <span>ENS</span>
-        </div>
-        <div class="partner-block">
-            <div class="partner">
-                <img src="/images/partners/icon_opensea.png">
-            </div>
-            <span>OpenSea</span>
-        </div>
-    </div>
-</section>
+        </section>
 
-<footer class="footer">
-    <div class="footer-spacer"></div>
-    <nav class="footer-nav">
-        <a class="footer-text" href="#about">About</a>
-        <a class="footer-text" href="#jobs">Jobs</a>
-        <a class="legal-footer" href="#legal">Legal</a>
-    </nav>
-    <div class="socials">
-        <a href="https://x.com/home" title="X" target="_blank"><i class="fa-brands fa-x-twitter fa-beat"
-                style="color: rgb(0, 0, 0);"></i></a>
-        <a href="https://web.telegram.org/a/" title="Telegram" target="_blank"><i class="fa-brands fa-telegram fa-beat"
-                style="color: rgb(0, 136, 204);"></i></a>
-        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" title="Youtube" target="_blank"><i
-                class="fa-brands fa-youtube fa-beat" style="color: rgb(255, 0, 0);"></i></a>
-        <a href="https://discord.com/" title="Discord" target="_blank"><i class="fa-brands fa-discord fa-beat"
-                style="color: rgb(88, 101, 242);"></i></a>
-    </div>
-</footer>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-spacer"></div>
+        <nav class="footer-nav">
+            <a class="footer-link" href="#about">About</a>
+            <a class="footer-link" href="#jobs">Jobs</a>
+            <a class="legal-footer" href="#legal">Legal</a>
+        </nav>
+        <div class="socials">
+            <a href="https://x.com/home" title="X" target="_blank">
+                <i class="fa-brands fa-x-twitter fa-beat social-icon--x"></i>
+            </a>
+            <a href="https://web.telegram.org/a/" title="Telegram" target="_blank">
+                <i class="fa-brands fa-telegram fa-beat social-icon--telegram"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" title="Youtube" target="_blank">
+                <i class="fa-brands fa-youtube fa-beat social-icon--youtube"></i>
+            </a>
+            <a href="https://discord.com/" title="Discord" target="_blank">
+                <i class="fa-brands fa-discord fa-beat social-icon--discord"></i>
+            </a>
+        </div>
+    </footer>
 
 </body>
+</html>
